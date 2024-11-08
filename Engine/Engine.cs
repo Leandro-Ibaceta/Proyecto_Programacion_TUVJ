@@ -276,6 +276,7 @@ public static void ErrorFatal(string texto)
     public static int KEY_DOWN = Sdl.SDLK_DOWN;
     public static int KEY_RIGHT = Sdl.SDLK_RIGHT;
     public static int KEY_LEFT = Sdl.SDLK_LEFT;
+    public static int KEY_ENTER = Sdl.SDLK_RETURN;
 
     public static int MOUSE_LEFT = Sdl.SDL_BUTTON_LEFT;
     public static int MOUSE_RIGHT = Sdl.SDL_BUTTON_RIGHT;

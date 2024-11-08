@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Media;
+using System.Security.Permissions;
 using Tao.Sdl;
 
 namespace MyGame
@@ -9,6 +10,14 @@ namespace MyGame
     {
         
         static Image image = Engine.LoadImage("assets/fondo.png");
+
+        static Player player = new Player();
+        static int speed = 2;
+        static int posX;
+        static int posY;
+        
+        
+        
         
         
         static void Main(string[] args)
@@ -18,6 +27,7 @@ namespace MyGame
             
             while (true)
             {
+                
                 
                 CheckInputs();
                 Update();
@@ -30,12 +40,13 @@ namespace MyGame
         {
             if (Engine.KeyPress(Engine.KEY_LEFT))
             {
-
+               //meter en un metodo
+                posX -= 2;
             }
 
-            if (Engine.KeyPress(Engine.KEY_LEFT))
+            if (Engine.KeyPress(Engine.KEY_RIGHT))
             {
-
+                posX += 2;
             }
 
             if (Engine.KeyPress(Engine.KEY_LEFT))
@@ -52,6 +63,10 @@ namespace MyGame
             {
                 Environment.Exit(0);
             }
+            if (Engine.KeyPress(Engine.KEY_ENTER))
+            {  
+
+            }
         }
 
         static void Update()
@@ -63,7 +78,15 @@ namespace MyGame
         {
             Engine.Clear();
             Engine.Draw(image, 0, 0);
+            Engine.Draw(player.LoadSprite(), 300 + posX, 300);
             Engine.Show();
         }
+
+        static void Debug(int posX, int posY)
+        {
+            //Engine.DrawText("X= " + posX, 0, 600, 255, 0, 0, debugFont);
+        }
+
+        
     }
 }
