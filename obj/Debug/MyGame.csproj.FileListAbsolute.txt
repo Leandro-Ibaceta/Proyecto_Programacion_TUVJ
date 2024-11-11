@@ -65,3 +65,5 @@ C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\o
 C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\obj\Debug\MyGame.pdb
 C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Player.png
 C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\rhombus.png
+C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Font\RobotoCondensed-Bold.ttf
+C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Bullet.png
