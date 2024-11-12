@@ -67,3 +67,16 @@ C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\b
 C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\rhombus.png
 C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Font\RobotoCondensed-Bold.ttf
 C:\Users\Leandro\Documents\Proyectos\JueguitoSDLTAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Bullet.png
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Bullet.png
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\fondo.png
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Player.png
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\rhombus.png
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\assets\Font\RobotoCondensed-Bold.ttf
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\MyGame.exe.config
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\MyGame.exe
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\bin\Debug\MyGame.pdb
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\obj\Debug\MyGame.csproj.AssemblyReference.cache
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\obj\Debug\MyGame.csproj.CoreCompileInputs.cache
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\obj\Debug\MyGame.csproj.Up2Date
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\obj\Debug\MyGame.exe
+C:\Users\ibace\Documents\Proyectos\Jueguito SDL TAO\Proyecto_Programacion_TUVJ\obj\Debug\MyGame.pdb

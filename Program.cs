@@ -9,18 +9,16 @@ namespace MyGame
 
     class Program
     {
-
+        //fondo
         static Image image = Engine.LoadImage("assets/fondo.png");
-        static Image enemy = Engine.LoadImage("assets/rhombus.png");
-        static Image bullet = Engine.LoadImage("assets/Bullet.png");
-
+        //fuente
         static Font font;
+        
 
         static Player player = new Player(300f, 300f);
-        static Enemy[] enemies = new Enemy[5];
+        static Enemy[] enemies = new Enemy[10];
+        static Bullet[] bullets = new Bullet[10];
         static float speed = 200;
-        static float posX = 300;
-        static float posY = 300;
         static float enemyPosx = 10;
         static float enemyPosy = 10;
         static float enemySpeed = 5;
@@ -28,16 +26,15 @@ namespace MyGame
         static DateTime startTime = DateTime.Now;
         static float deltaTime;
         static float lastTimeFrame;
+        static float respawnTime = 2;
 
         static Random random = new Random();
-        //prueba para bala
-        static bool bulletIsActive = false;
-        static float bulletSpeed = 20f;
-        static float fireRate = 0.5f;
         static DateTime timeLastShoot = DateTime.Now;
-        static float bulletPositionX;
-        static float bulletPositionY;
+        static float timeLastSpawn = 0;
 
+        static float fireRate = 0.7f;
+
+        static string tecla = "";
 
         static void Main(string[] args)
         {
@@ -48,11 +45,16 @@ namespace MyGame
             for (int i = 0; i < enemies.Length; i++)
             {
                 enemies[i] = new Enemy();
-                enemies[i].posX = i * 30;
-                enemies[i].posY = i * 30;
-                enemies[i].sprite = enemy;
-                enemies[i].Speed = 10;
-                enemies[i].isActive = true;
+                enemies[i].Speed = 100;
+                enemies[i].isActive = false;
+                
+            }
+            for (int i = 0; i < bullets.Length; i++)
+            {
+                bullets[i] = new Bullet(player.PosX, player.PosY);
+                bullets[i].isActive = false;
+                
+                
             }
 
 
@@ -71,27 +73,85 @@ namespace MyGame
             //shoot
             if (Engine.KeyPress(Engine.KEY_LEFT))
             {
+                tecla = "left";
+                if ((DateTime.Now - timeLastShoot).TotalSeconds > fireRate)
+                {
+                    for (int i = 0; i < bullets.Length; i++)
+                    {
+                        if (bullets[i].isActive == false)
+                        {
+                            bullets[i].isActive = true;
+                            bullets[i].PosX = player.PosX;
+                            bullets[i].PosY = player.PosY + player.Height / 2;
+                            timeLastShoot = DateTime.Now;
+                            break;
+                        }
+                    }
+                }
             }
             if (Engine.KeyPress(Engine.KEY_RIGHT))
             {
-            }
-            if (Engine.KeyPress(Engine.KEY_UP))
-            {
-
-                    bulletIsActive = true;
+                tecla = "right";
                 if ((DateTime.Now - timeLastShoot).TotalSeconds > fireRate)
                 {
-                    bulletPositionX = player.PosX + player.width / 2;
-                    bulletPositionY = player.PosY;
-                    timeLastShoot = DateTime.Now;
+                    for (int i = 0; i < bullets.Length; i++)
+                    {
+                        if (bullets[i].isActive == false)
+                        {
+                            bullets[i].isActive = true;
+                            bullets[i].PosX = player.PosX + player.Width;
+                            bullets[i].PosY = player.PosY + player.Height / 2;
+                            timeLastShoot = DateTime.Now;
+                            break;
 
+                        }
+
+                    }
+                }
+            }
+
+            if (Engine.KeyPress(Engine.KEY_UP))
+            {
+                tecla = "up";
+                if ((DateTime.Now - timeLastShoot).TotalSeconds > fireRate)
+                {
+                    for (int i = 0; i < bullets.Length; i++)
+                    {
+                        if (bullets[i].isActive == false)
+                        {
+                            bullets[i].isActive = true;
+                            bullets[i].PosX = player.PosX + player.Width / 2;
+                            bullets[i].PosY = player.PosY;
+                            timeLastShoot = DateTime.Now;
+                            break;
+
+                        }
+
+                    }
                 }
 
             }
+
             if (Engine.KeyPress(Engine.KEY_DOWN))
             {
+                tecla = "down";
+                if ((DateTime.Now - timeLastShoot).TotalSeconds > fireRate)
+                {
+                    for (int i = 0; i < bullets.Length; i++)
+                    {
+                        if (bullets[i].isActive == false)
+                        {
+                            bullets[i].isActive = true;
+                            bullets[i].PosX = player.PosX + player.Width / 2;
+                            bullets[i].PosY = player.PosY + player.Height;
+                            timeLastShoot = DateTime.Now;
+                            break;
+
+                        }
+
+                    }
+                }
             }
-            //move 
             if (Engine.KeyPress(Engine.KEY_W))
             {
                 player.PosY -= speed * deltaTime;
@@ -122,6 +182,7 @@ namespace MyGame
 
             }
         }
+        //move 
 
         static void Update()
         {
@@ -129,35 +190,83 @@ namespace MyGame
             deltaTime = curentTime - lastTimeFrame;
             lastTimeFrame = curentTime;
 
-            //movimiento de sprite en diagonal
-            //pasar todo esto a un metodo adentro de enemy
-            //float deltaX = posX - prueba.posX ;
-            //float deltaY = posY - prueba.posY;
+            timeLastSpawn += deltaTime;
 
-            //float distance = (float)Math.Sqrt(Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2));
-
-            //float directionX = deltaX / distance;
-            //float directionY = deltaY / distance;
-
-            //prueba.posX += directionX * prueba.Speed;
-            //prueba.posY += directionY * prueba.Speed;
-
-            for (int i = 0; i < enemies.Length; i++)
+            for (int i = 0; i < bullets.Length; i++)
             {
-                enemies[i].MoveToPlayer(player.PosX, player.PosY);
+                if (bullets[i].isActive)
+                {
+                    for (int j = 0; j < enemies.Length; j++)
+                    {
+                        if (checkBulletCollision(bullets[i], enemies[j]))
+                        {
+                            bullets[i].isActive = false;
+                            enemies[j].isActive = false;
+                            break;
+                        }
+                    }
+                }
             }
 
-
-            if (bulletIsActive)
+            //si esta dentro del tiempo spawnea el enemigo en una posicion aleatoria
+            if (shouldRespawn())
             {
-                bulletPositionY -= bulletSpeed;
-                if(bulletPositionY < 0)
-                    bulletIsActive = false;
+                for (int i = 0; i < enemies.Length; i++)
+                {
+                    if (!enemies[i].isActive)
+                    {
+                        enemies[i].isActive = true;
+                        enemies[i].SpawnEnemies(0, 0);
+                        timeLastSpawn = 0;
+                        break;
+
+                    }
+                }
+            }
+            //mueve a ese enemigo desde ese spawn
+            for(int i = 0; i < enemies.Length; i++)
+            {
+                if(enemies[i].isActive)
+                enemies[i].MoveToPlayer(player.PosX, player.PosY,deltaTime);
                 
             }
 
+            
 
 
+            for (int i = 0; i < bullets.Length; i++)
+            {
+
+                if (bullets[i].isActive)
+                {
+                    switch (tecla)
+                    {
+                        case "up":
+                            bullets[i].PosY -= bullets[i].Speed * deltaTime;
+                            if (bullets[i].PosY < 0)
+                                bullets[i].isActive = false;
+                            break;
+                        case "down":
+                            bullets[i].PosY += bullets[i].Speed * deltaTime;
+                            if (bullets[i].PosY > 780)
+                                bullets[i].isActive = false;
+                            break;
+                        case "left":
+                            bullets[i].PosX -= bullets[i].Speed * deltaTime;
+                            if (bullets[i].PosX < 0)
+                                bullets[i].isActive = false;
+                            break;
+                        case "right":
+                            bullets[i].PosX += bullets[i].Speed * deltaTime;
+                            if (bullets[i].PosX > 1030)
+                                bullets[i].isActive = false;
+                            break;
+
+                    }
+                }
+            }
+
+            
 
 
         }
@@ -170,15 +279,20 @@ namespace MyGame
             {
                 if (enemies[i].isActive)
                 {
-                    Engine.Draw(enemies[i].sprite, enemies[i].posX, enemies[i].posY);
+                    Engine.Draw(enemies[i].sprite, enemies[i].PosX, enemies[i].PosY);
                 }
             }
 
 
             //Engine.Draw(prueba.sprite, prueba.posX, prueba.posY);
             Engine.Draw(player.Sprite, player.PosX, player.PosY);
-            if (bulletIsActive)
-                Engine.Draw(bullet, bulletPositionX, bulletPositionY);
+            for (int i = 0; i < bullets.Length; i++)
+            {
+                if (bullets[i].isActive)
+                    Engine.Draw(bullets[i].Sprite, bullets[i].PosX, bullets[i].PosY);
+
+            }
+
             Engine.DrawText("Tiempo: ", 0, 0, 255, 255, 255, font);
             Engine.Show();
         }
@@ -187,7 +301,24 @@ namespace MyGame
         {
             //Engine.DrawText("X= " + posX, 0, 600, 255, 0, 0, debugFont);
         }
+        static bool shouldRespawn()
+        {
+            return timeLastSpawn >= respawnTime;
+        }
+        static bool checkBulletCollision(Bullet a, Enemy b)
+        {
+            bool collission = (a.PosX < b.PosX + b.Width) && (a.PosX + a.Width > b.PosX) && (a.PosY < b.PosY + b.Heigth) && (a.PosY + a.Height > b.PosY);
 
+            return collission;
+        }
+        static bool checkPlayerCollision(Player a, Enemy b)
+        {
+            bool collission = (a.PosX < b.PosX + b.Width) && (a.PosX + a.Width > b.PosX) && (a.PosY < b.PosY + b.Heigth) && (a.PosY + a.Height > b.PosY);
+
+            return collission;
+        }
 
     }
+
 }
+

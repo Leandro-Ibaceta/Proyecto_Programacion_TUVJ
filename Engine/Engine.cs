@@ -10,6 +10,9 @@ class Engine
     static IntPtr screen;
     static int ancho, alto;
 
+    public static int Ancho { get { return ancho; } }
+    public static int Alto { get { return alto; } }
+
     public static void Initialize()
     {
         ancho = 1024;

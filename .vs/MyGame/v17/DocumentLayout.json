@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\",
+  "WorkspaceRootPath": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|c:\\users\\leandro\\documents\\proyectos\\jueguitosdltao\\proyecto_programacion_tuvj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|c:\\users\\ibace\\documents\\proyectos\\jueguito sdl tao\\proyecto_programacion_tuvj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|solutionrelative:enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|solutionrelative:bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|c:\\users\\ibace\\documents\\proyectos\\jueguito sdl tao\\proyecto_programacion_tuvj\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|solutionrelative:gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\engine\\engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\engine\\engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|solutionrelative:engine\\engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDCD5DC-5145-4C37-ACEA-CE81D939F89E}|MyGame.csproj|solutionrelative:bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Bullet.cs",
-              "RelativeDocumentMoniker": "Bullet.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Bullet.cs",
-              "RelativeToolTip": "Bullet.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\GameObject.cs",
+              "RelativeDocumentMoniker": "GameObject.cs",
+              "ToolTip": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\GameObject.cs",
+              "RelativeToolTip": "GameObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T20:33:02.326Z"
+              "WhenOpened": "2024-11-12T21:43:31.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Bullet.cs",
+              "RelativeDocumentMoniker": "Bullet.cs",
+              "ToolTip": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Bullet.cs",
+              "RelativeToolTip": "Bullet.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:33:02.326Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Enemy.cs",
               "RelativeDocumentMoniker": "Enemy.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Enemy.cs",
+              "ToolTip": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Enemy.cs",
               "RelativeToolTip": "Enemy.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwBwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T19:50:12.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Player.cs",
+              "DocumentMoniker": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Player.cs",
+              "ToolTip": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwBsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T20:48:28.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Engine.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Engine\\Engine.cs",
+              "DocumentMoniker": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Engine\\Engine.cs",
               "RelativeDocumentMoniker": "Engine\\Engine.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Engine\\Engine.cs",
+              "ToolTip": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Engine\\Engine.cs",
               "RelativeToolTip": "Engine\\Engine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T19:22:14.922Z"
+              "WhenOpened": "2024-10-12T19:22:14.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Leandro\\Documents\\Proyectos\\JueguitoSDLTAO\\Proyecto_Programacion_TUVJ\\Program.cs",
+              "ToolTip": "C:\\Users\\ibace\\Documents\\Proyectos\\Jueguito SDL TAO\\Proyecto_Programacion_TUVJ\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAuwFMAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T19:22:15.449Z",
               "EditorCaption": ""

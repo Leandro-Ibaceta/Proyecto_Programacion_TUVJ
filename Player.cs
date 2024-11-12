@@ -11,39 +11,22 @@ namespace MyGame
         //acomodar esto
         private Image sprite = Engine.LoadImage("assets/Player.png");
         private float speed = 20f;
+        private int width = 100;
+        private int height = 100;
         public Image Sprite { get { return sprite; } }
 
         public float Speed { get { return speed; } }
 
-        public int width = 100;
-        public int height = 100;
-
         public float PosX { get; set; }
         public float PosY { get; set; }
-
+        public int Width { get { return height; } }
+        public int Height { get { return height; } }
         public Player(float posX, float posY)
         {
-            this.PosX = posX;
-            this.PosY = posY;
-        }
-        
-
-
-
-
-        public void Shoot()
-        {
+            PosX = posX;
+            PosY = posY;
 
         }
 
-        public void Move()
-        {
-
-        }
-
-        public void MoveDiagonal(int x, int y)
-        {
-
-        }
     }
 }
