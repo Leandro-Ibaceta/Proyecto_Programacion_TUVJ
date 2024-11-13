@@ -10,7 +10,7 @@ namespace MyGame
     {
         //acomodar esto
         private Image sprite = Engine.LoadImage("assets/Player.png");
-        private float speed = 20f;
+        private float speed = 15f;
         private int width = 100;
         private int height = 100;
         public Image Sprite { get { return sprite; } }

@@ -80,9 +80,6 @@ namespace MyGame
 
             
         }
-        public void Destroy()
-        {
-            isActive = false;
-        }
+        
     }
 }
